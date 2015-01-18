@@ -23,6 +23,7 @@
 proplist_to_record(Options) ->
     Proplist = Options ++ default_options(),
     #sim_params{?LOAD(Proplist, genetic_ops),
+                ?LOAD(Proplist, genetic_ops_opts),
                 ?LOAD(Proplist, problem_size),
                 ?LOAD(Proplist, initial_energy),
                 ?LOAD(Proplist, reproduction_threshold),

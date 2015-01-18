@@ -1,6 +1,7 @@
 -include_lib("mas/include/mas.hrl").
 
 -record(sim_params, {genetic_ops :: atom(),
+                     genetic_ops_opts :: [{Key :: atom(), Value :: term()}],
                      problem_size :: pos_integer(),
                      initial_energy :: integer(),
                      reproduction_threshold :: integer(),
